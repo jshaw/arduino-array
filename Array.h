@@ -30,7 +30,7 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 
-#include <WProgram.h>
+#include <Arduino.h>
 
 template<typename type>
 class Array {
