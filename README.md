@@ -12,7 +12,11 @@ Once the library is imported, an '#include <Array.h>' line will appear at the to
 ## Functions
 `variableName.getMin();`
 
+`variableName.getMinIndex();`
+
 `variableName.getMax();`
+
+`variableName.getMaxIndex();`
 
 `variableName.getAverage();`
 
