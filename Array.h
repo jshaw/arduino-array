@@ -48,6 +48,16 @@ class Array {
 			}
 			return max;
 		}
+
+		type getMaxIndex(){
+			type maxIndex = array[0];
+			for (int i=1; i<arraySize; i++){
+				if (maxIndex < array[i]){
+					maxIndex = array[i];
+				}
+			}
+			return maxIndex;
+		}
 		
 		type getMin(){
 			type min = array[0];
@@ -57,6 +67,16 @@ class Array {
 				}
 			}
 			return min;
+		}
+
+		type getMinIndex(){
+			type minIndex = array[0];
+			for (int i=1; i<arraySize; i++){
+				if (minIndex > array[i]){
+					minIndex = i;
+				}
+			}
+			return minIndex;
 		}
 		
 		type getAverage(){
