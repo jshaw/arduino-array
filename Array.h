@@ -50,10 +50,12 @@ class Array {
 		}
 
 		type getMaxIndex(){
+			type max = array[0];
 			type maxIndex = array[0];
-			for (int i=1; i<arraySize; i++){
-				if (maxIndex < array[i]){
-					maxIndex = array[i];
+			for (int i=0; i<arraySize; i++){
+				if (max <= array[i]){
+					max = array[i];
+					maxIndex = i;
 				}
 			}
 			return maxIndex;
@@ -70,9 +72,11 @@ class Array {
 		}
 
 		type getMinIndex(){
+			type min = array[0];
 			type minIndex = array[0];
-			for (int i=1; i<arraySize; i++){
-				if (minIndex > array[i]){
+			for (int i=0; i<arraySize; i++){
+				if (min >= array[i]){
+					min = array[i];
 					minIndex = i;
 				}
 			}
